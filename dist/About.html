@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="bg-[#071b30] text-[#ffffff] m-0 p-0">
+  
+  <nav class="p-5 bg- shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-[70px] font-semibold bg-[linear-gradient(to_left,#923939,#5b4b6b)] text-transparent bg-clip-text text-right;
+      -webkit-background-clip: text">
+        
+        Personal Profile
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-[#071b30] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="Home.html" class="text-xl hover:text-yellow-500	 duration-500">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="Skills.html" class="text-xl hover:text-yellow-500	 duration-500">SKILLS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="Photos.html" class="text-xl hover:text-yellow-500	 duration-500">PHOTOS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="About.html" class="text-xl hover:text-yellow-500	 duration-500">ABOUT</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="Contact.html" class="text-xl hover:text-yellow-500	 duration-500">CONTACT</a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+
+
+
+ 
+     
+
+  
+  <footer>
+    <div class="p-10 bg-gray-800 text-gray-200">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          <div class="mb-5">
+            <h4 class="text-2xl pb-4">CONTACT INFO:</h4>
+            <p class="text-gray-500">
+              Sunbury Road <br>
+              Coventry, CV3 4DL <br>
+              United Kingdom <br><br>
+              <strong>Phone:</strong>+44 7568338412 <br>
+              <strong>Email:</strong>Sergiu199393@gmail.com <br>
+            </p>
+
+          </div>
+          <div class="mb-5">
+                <h4 class="pb-4">Useful Links:</h4>
+                <ul class="text-gray-500">
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="Home.html">Home</a>  </li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="Photos.html">PHOTOS</a> </li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="Skills.html">SKILLS</a> </li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="About.html">ABOUT</a> </li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="Contact.html">CONTACT</a> </li>
+                </ul> 
+
+          </div>
+          <div class="mb-5">
+                <h4 class="pb-4">Our service</h4>
+                <ul class="text-gray-500">
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="#">web design</a></li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="#">web development</a></li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="#">product management</a></li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="#">marketing</a></li>
+                  <li class="pb-4"><i class="fa fa-chevron-right text-yellow-500"></i><a class="hover:text-yellow-500" href="#">graphic design</a></li>
+                </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="w-full bg-gray-900 text-gray-500 px-10">
+      <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-between items-center">
+        <div class="text-center">
+          <div>
+          Copyright <strong><span>company</span></strong>. All Rights Reserved
+          </div>
+          <div>
+            Designed by <a href="#" class="text-yellow-500">SERGHEI CODECADEMY</a>
+          </div>
+        </div>
+        <div class="text-center text-xl text-white mb-2">
+          <a href="#" class="w-10 h-10 rounded-full bg-yellow-500 hover:bg-yellow-600 mx-1 inline-block pt-1"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-yellow-500 hover:bg-yellow-600 mx-1 inline-block pt-1"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-yellow-500 hover:bg-yellow-600 mx-1 inline-block pt-1"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-yellow-500 hover:bg-yellow-600 mx-1 inline-block pt-1"><i class="fa fa-skype"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-yellow-500 hover:bg-yellow-600 mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  
+  
+
+
+</body>
+
+</html>
